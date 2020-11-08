@@ -18,7 +18,15 @@ JAVA作业
 5.根据输入情况，要在程序中做异常处理。
 
 
-三、关键代码
+三、结构
+结构分为两个接口，老师和学生，
+
+
+
+
+
+
+四、关键代码
 教师接口
 package Two;
 public interface TeacherInterface {
@@ -45,4 +53,9 @@ public boolean Loan() {
         return false;
     }
 
-判定是否需要
+判定是否需要交税
+ boolean TF = graduate.Loan();
+            if (TF) { System.out.println("你需要贷款"); }
+            else { System.out.println("你需要交税" + "金额为:" + (pay - fee) + "元"); }
+            
+            
